@@ -17,7 +17,7 @@ function ArticleContent() {
   console.log(data2);
   useEffect(() => {
     axios
-      .get("http://localhost:3008/")
+      .get("https://heisenberg-tamil.onrender.com/")
       .then((response) => {
         setData(response.data[0]);
         setData1(response.data[1]);

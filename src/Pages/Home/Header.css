@@ -1,0 +1,73 @@
+#Pic {
+    margin-top: 10em;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 20px;
+    margin-left: 25px;
+    margin-right: 20px;
+  }
+  
+  #Pic .one {
+    width: 760px;
+    height: 440px;
+    border-radius: 10px;
+    background-color: violet;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  
+  #Pic .one .Text {
+    font-size: 34px;
+    color: white;
+    position: relative;
+    top: 265px;
+    left: 180px;
+  }
+  
+  #Pic .one .Text .Traval {
+    color: rgb(160, 154, 154);
+    font-size: 20px;
+    position: relative;
+    left: 65px;
+  }
+  
+  #Pic .two {
+    width: 450px;
+    height: 215px;
+    border-radius: 10px;
+    background-color: violet;
+  }
+  
+  #Pic .two .Text {
+    font-size: 23px;
+    color: white;
+    padding: 20px;
+    padding-top: 80px;
+    text-align: left;
+  }
+  
+  #Pic .two .Text .Traval {
+    color: rgb(146, 143, 143);
+    font-size: 20px;
+  }
+  
+  #Pic .three {
+    width: 450px;
+    height: 215px;
+    border-radius: 10px;
+    background-color: violet;
+  }
+  
+  #Pic .three .Text {
+    font-size: 23px;
+    color: white;
+    padding: 20px;
+    padding-top: 80px;
+    text-align: left;
+  }
+  
+  #Pic .three .Text .Traval {
+    color: rgb(156, 153, 153);
+    font-size: 20px;
+  }

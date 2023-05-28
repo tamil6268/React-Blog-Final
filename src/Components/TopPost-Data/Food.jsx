@@ -5,12 +5,12 @@ import axios from 'axios';
 const Food = (props) => {
     const navigate = useNavigate();
     const handleNavigation = (id, item) => {// two arg - 1. pathname - 2. state
-        navigate(`/Food/${id}`, { state: { item } });
+        navigate(`https://heisenberg-tamil.onrender.com/Food/${id}`, { state: { item } });
     };
     const [data,setData]=useState([]);
     useEffect(()=>{
        axios
-           .get('http://localhost:3008/food/topPost')
+           .get('https://heisenberg-tamil.onrender.com/food/topPost')
            .then((response)=>{
               setTimeout(()=>{
                 setData(response.data);

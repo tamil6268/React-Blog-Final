@@ -5,12 +5,12 @@ import { useNavigate } from "react-router-dom";
 const Hollywood = (props) => {
     const navigate = useNavigate();
     const handleNavigation = (id, item) => {// two arg - 1. pathname - 2. state
-        navigate(`/Hollywood/${id}`, { state: { item } });
+        navigate(`https://heisenberg-tamil.onrender.com/Hollywood/${id}`, { state: { item } });
     };
     const [data,setData]=useState([]);
     useEffect(()=>{
        axios
-           .get('http://localhost:3008/hollywood/topPost')
+           .get('https://heisenberg-tamil.onrender.com/hollywood/topPost')
            .then((response)=>{
                setData(response.data);
            })

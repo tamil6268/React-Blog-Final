@@ -5,12 +5,12 @@ import { useNavigate } from "react-router-dom";
 const Pic=()=>{
 const navigate = useNavigate();
     const handleNavigation = (id, item) => {// two arg - 1. pathname - 2. state
-        navigate(`/bollywood/${id}`, { state: { item } });
+        navigate(`https://heisenberg-tamil.onrender.com/bollywood/${id}`, { state: { item } });
     };
     const [data1,setData1]=useState([]);
     useEffect(()=>{
         axios
-            .get('http://localhost:3008/home/singlepic')
+            .get('https://heisenberg-tamil.onrender.com/home/singlepic')
             .then((response)=>{
                 setData1(response.data);
                 console.log("Pic ",response.data)

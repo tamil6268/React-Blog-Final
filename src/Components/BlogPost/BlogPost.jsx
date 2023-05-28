@@ -9,7 +9,7 @@ function BlogPost(props) {
   const navigate = useNavigate();
   const handleNavigation = (id, item) => {
     // two arg - 1. pathname - 2. state
-    navigate(`/bollywood/${id}`, { state: { item } });
+    navigate(`https://heisenberg-tamil.onrender.com/bollywood/${id}`, { state: { item } });
   };
   const [data, setData] = useState([]);
   console.log("Blogpost",data)
@@ -18,7 +18,7 @@ function BlogPost(props) {
   const [data2, setData2] = useState([]);
   console.log("Blogpost",data2)
   useEffect(() => {
-    axios.get("http://localhost:3008/blogPost").then((response) => {
+    axios.get("https://heisenberg-tamil.onrender.com/blogPost").then((response) => {
       setData(response.data[0]);
       setData1(response.data[1]);
       setData2(response.data[2]);

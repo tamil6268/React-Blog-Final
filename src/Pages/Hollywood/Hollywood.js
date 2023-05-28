@@ -7,13 +7,13 @@ import Ads from '../../Common/Ads'
 const Hollywood = (props) => {
     const navigate = useNavigate();
     const handleNavigation = (id, item) => {// two arg - 1. pathname - 2. state
-        navigate(`/Hollywood/${id}`, { state: { item } });
+        navigate(`https://heisenberg-tamil.onrender.com/Hollywood/${id}`, { state: { item } });
     };
 
     const [data,setData]=useState([]);
     useEffect(()=>{
        axios
-           .get('http://localhost:3008/hollywood')
+           .get('https://heisenberg-tamil.onrender.com/hollywood')
            .then((response)=>{
               setData(response.data);
            })

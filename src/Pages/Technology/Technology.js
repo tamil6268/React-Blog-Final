@@ -7,13 +7,13 @@ import Ads from '../../Common/Ads'
 const Technology = (props) => {
     const navigate = useNavigate();
     const handleNavigation = (id, item) => {// two arg - 1. pathname - 2. state
-        navigate(`/Technology/${id}`, { state: { item } });
+        navigate(`https://heisenberg-tamil.onrender.com/Technology/${id}`, { state: { item } });
     };
 
     const [data,setData]=useState([]);
     useEffect(()=>{
        axios
-           .get('http://localhost:3008/technology')
+           .get('https://heisenberg-tamil.onrender.com/technology')
            .then((response)=>{
               setData(response.data);
            })
